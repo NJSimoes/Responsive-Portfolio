@@ -10,31 +10,11 @@ body {
   background: url("../images/diamonds.png");
 }
 
-* {
-  /* Box-model */
-  box-sizing: border-box;
 
-  /* Positioning */
-  margin: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
 
 /* general */
 
-.wrapper {
-  height: auto !important;
-  height: 100%;
 
-  /* Box-model */
-  min-height: 100%;
-
-  /* Positioning */
-  margin: 0 auto -100px;
-}
 
 .container {
   /* Box-model */
@@ -43,7 +23,7 @@ body {
 
   /* Positioning */
   margin: 0 auto;
-  clear: both;
+
 }
 
 h1,
@@ -86,7 +66,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
 
   /* Box-model */
@@ -173,12 +153,12 @@ nav li:first-child {
 
 footer,
 .push {
-  height: 100px;
+  height: 0px;
 }
 
 footer {
   /* Box-model */
-  padding: 30px 0;
+  padding: 30px ;
 
   /* Positioning */
   clear: both;
@@ -248,7 +228,7 @@ h3,
 /* main */
 
 main {
-  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .main-section {
@@ -383,13 +363,89 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 980px) {
-  
+
 }
 
 @media only screen and (max-width: 768px) {
-  
-}
+
+  nav a {
+  }
+  body {
+    margin:auto;
+    max-width: 728px;
+    font-size: 15px;
+  }
+  .container {
+    max-width: 728px;
+    margin: auto;
+    padding-right: 20px;  
+ }
+}  
 
 @media only screen and (max-width: 640px) {
- 
+  
+  nav a {
+    
+    margin: auto;
+    width:100%;
+  }
+
+  p {
+    margin: auto;
+    padding: 20px;
+
+  }
+
+  body {
+    margin: auto;
+    max-width: 600px;
+    font-size: 12px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  #logo {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px;
+  }
+  
+  .ul {
+    width: 100%;
+    margin: auto;
+  }
+
+  .auth-image {
+    width: 100%;
+  }
+
+  nav { 
+    text-align: center;
+    margin:auto;
+    width: 100%;
+  }
+
+  ul { 
+    display: inline-block;
+    text-align: left;
+  } 
+
+  .main-section {
+    float: none;
+    width: 100%;
+    max-width: 610px;
+
+    /* Box-model */
+    padding: 0px;
+
+    /* Positioning */
+    margin: auto;
+    background: #fff;
+
+    /* Visual */
+    border: 1px solid #ddd;
+  }
 }
